@@ -24,4 +24,5 @@ let object = utils.isObject({lib: 'Simples.js'})
 let data = utils.formatadorDate('2025-07-11')
 let date = utils.formatDate('2025-07-11')
 let reverse = utils.reverseString('esreveR')
-console.log(reverse)
+let squared = math.squared(5);
+console.log(squared)

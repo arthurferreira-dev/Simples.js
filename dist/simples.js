@@ -41,6 +41,11 @@ var simplesMath = /*#__PURE__*/function () {
       return Math.sqrt(number);
     }
   }, {
+    key: "squared",
+    value: function squared(number) {
+      return number * number;
+    }
+  }, {
     key: "log",
     value: function log(number) {
       return Math.log(number);

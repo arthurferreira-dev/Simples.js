@@ -25,6 +25,10 @@ class simplesMath {
         return Math.sqrt(number);
     }
 
+    squared(number) {
+        return number * number;
+    }
+
     log(number) {
         return Math.log(number);
     }

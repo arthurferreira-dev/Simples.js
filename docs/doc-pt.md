@@ -1,5 +1,9 @@
 # Documento do ``Simples.js``
 
+## Classes
+* [``simplesMath``](#classe-simplesmath)
+* [``simplesUtils``](#classe-simplesutils)
+
 ## Classe ``simplesMath``
 
 ### Acesso as Classes da Lib:
@@ -37,6 +41,11 @@ let div = math.div(3, 0); // output: Infinity
 ### Raíz Quadrada
 ```javascript
 let raiz = math.sqrt(25); // output: 5
+```
+
+### Número ao Quadrado
+```javascript
+let quadrado = math.squared(5); // output: 25
 ```
 
 ### Logaritmo
