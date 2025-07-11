@@ -2,9 +2,9 @@
 
 ## Classes
 
-* [``simplesMath``](#classe-simplesmath)
-* [``simplesUtils``](#classe-simplesutils)
-* [``simplesElement``](#classe-simpleselement)
+* [``simplesMath``](#class-simplesmath)
+* [``simplesUtils``](#class-simplesutils)
+* [``simplesElement``](#class-simpleselement)
 
 ## Class ``simplesMath``
 
