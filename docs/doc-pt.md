@@ -42,6 +42,11 @@ let raiz = math.sqrt(25) // output: 5
 let log = math.log(30) // output: 3.4011973816621555
 ```
 
+### Logaritmo em base 10
+```javascript
+let log10 = math.log10(30) // output: 1.4771212547196624
+```
+
 ### Arredondamento
 ```javascript
 let log = math.log(30)

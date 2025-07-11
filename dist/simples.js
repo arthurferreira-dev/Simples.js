@@ -55,6 +55,46 @@ var simplesMath = /*#__PURE__*/function () {
     value: function round(number) {
       return Math.round(number);
     }
+  }, {
+    key: "power",
+    value: function power(base, expo) {
+      return Math.pow(base, expo);
+    }
+  }, {
+    key: "random",
+    value: function random(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+  }, {
+    key: "randomInt",
+    value: function randomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  }, {
+    key: "pow10",
+    value: function pow10(number) {
+      return Math.pow(10, number);
+    }
+  }, {
+    key: "mod",
+    value: function mod(n1, n2) {
+      return n1 % n2;
+    }
+  }, {
+    key: "factorial",
+    value: function factorial(number) {
+      if (number < 0) return "Sorry, but the number is not positive. Desculpe mais o número não é positivo. Lo sentimos, pero el número no es positivo.";
+      var r = 1;
+      for (var i = 1; i <= number; i++) {
+        r *= i;
+      }
+      return r;
+    }
+  }, {
+    key: "abs",
+    value: function abs(number) {
+      return Math.abs(number);
+    }
   }]);
 }();
 module.exports = simplesMath;
