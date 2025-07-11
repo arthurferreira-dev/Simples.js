@@ -75,6 +75,10 @@ export class simplesMath {
     abs(number) {
         return Math.abs(number);
     }
+
+    pi(value) {
+        return Math.PI;
+    }
 }
 
 export class simplesUtils {
@@ -136,5 +140,35 @@ export class simplesElement {
 
     textElement(element, text) {
         element.textContent = text
+    }
+}
+
+export class simplesBrasil {
+    cafe(timer) { // pause
+        let time = timer * 1000
+        let seconds = timer / time
+        return setTimeout(seconds)
+    }
+
+    real(dinheiro) {
+        return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(dinheiro)
+    }
+}
+
+export class simplesUSA {
+    dollar(money) {
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol" }).format(money)
+    }
+
+    pause(timer) {
+        let time = timer * 1000
+        let seconds = timer / time
+        return setTimeout(seconds)
+    }
+}
+
+export class simplesEspana {
+    euro(dinero) {
+        return new Intl.NumberFormat("es-ES", { style: "currency", currency: 'EUR' }).format(dinero)
     }
 }

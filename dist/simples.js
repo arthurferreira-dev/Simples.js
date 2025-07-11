@@ -101,6 +101,11 @@ export var simplesMath = /*#__PURE__*/function () {
     value: function abs(number) {
       return Math.abs(number);
     }
+  }, {
+    key: "pi",
+    value: function pi(value) {
+      return Math.PI;
+    }
   }]);
 }();
 export var simplesUtils = /*#__PURE__*/function () {
@@ -184,6 +189,64 @@ export var simplesElement = /*#__PURE__*/function () {
     key: "textElement",
     value: function textElement(element, text) {
       element.textContent = text;
+    }
+  }]);
+}();
+export var simplesBrasil = /*#__PURE__*/function () {
+  function simplesBrasil() {
+    _classCallCheck(this, simplesBrasil);
+  }
+  return _createClass(simplesBrasil, [{
+    key: "cafe",
+    value: function cafe(timer) {
+      // pause
+      var time = timer * 1000;
+      var seconds = timer / time;
+      return setTimeout(seconds);
+    }
+  }, {
+    key: "real",
+    value: function real(dinheiro) {
+      return new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+      }).format(dinheiro);
+    }
+  }]);
+}();
+export var simplesUSA = /*#__PURE__*/function () {
+  function simplesUSA() {
+    _classCallCheck(this, simplesUSA);
+  }
+  return _createClass(simplesUSA, [{
+    key: "dollar",
+    value: function dollar(money) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        currencyDisplay: "narrowSymbol"
+      }).format(money);
+    }
+  }, {
+    key: "pause",
+    value: function pause(timer) {
+      var time = timer * 1000;
+      var seconds = timer / time;
+      return setTimeout(seconds);
+    }
+  }]);
+}();
+export var simplesEspana = /*#__PURE__*/function () {
+  function simplesEspana() {
+    _classCallCheck(this, simplesEspana);
+  }
+  return _createClass(simplesEspana, [{
+    key: "euro",
+    value: function euro(dinero) {
+      return new Intl.NumberFormat("es-ES", {
+        style: "currency",
+        currency: 'EUR'
+      }).format(dinero);
     }
   }]);
 }();

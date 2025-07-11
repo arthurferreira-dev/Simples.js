@@ -1,7 +1,10 @@
-import { simplesMath, simplesUtils } from "./dist/simples.js";
+import { simplesMath, simplesUtils, simplesBrasil, simplesUSA, simplesEspana } from "./dist/simples.js";
 
 let math = new simplesMath();
 let utils = new simplesUtils();
+let brasil = new simplesBrasil();
+let usa = new simplesUSA();
+let espana = new simplesEspana();
 
 let x = math.sum(1, 2)
 let y = math.sub(1, 1)
@@ -25,5 +28,9 @@ let data = utils.formatadorDate('2025-07-11')
 let date = utils.formatDate('2025-07-11')
 let reverse = utils.reverseString('esreveR')
 let squared = math.squared(5);
-let num = utils.isEmail('+55 13 99797-8941');
-console.log(num)
+let num = utils.isEmail('exemplo@gmail.com');
+let dindin = brasil.real(1500)
+let mm = usa.dollar(1500)
+let dinero = espana.euro(1500)
+
+console.log(dinero)
