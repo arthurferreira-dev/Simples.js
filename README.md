@@ -3,6 +3,7 @@
 
 [![NPM VERSION](https://img.shields.io/badge/npm-1.0.0-ff0000)](npmjs.com/)
 [![License](https://img.shields.io/badge/License-AGPL_3.0-purple)](LICENSE)
+[![Language](https://img.shields.io/badge/language-JS-yellow)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## Português (pt):
 
