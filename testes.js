@@ -20,5 +20,8 @@ let abs = math.abs(+5)
 let n = utils.isNumber(5);
 let str = utils.isString('Simples.js');
 let array = utils.isArray('a');
+let object = utils.isObject({lib: 'Simples.js'})
 let data = utils.formatadorDate('2025-07-11')
-console.log(data)
+let date = utils.formatDate('2025-07-11')
+let reverse = utils.reverseString('esreveR')
+console.log(reverse)
