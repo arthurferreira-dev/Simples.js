@@ -7,11 +7,11 @@ Uma biblioteca feita em **JavaScript**, Brasileira e que adiciona coisas toscas 
 
 ## English (en):
 
-One library made in **JavaScript**, Brazillian and add little things, but, add more features in your projects.
+One library is made in **JavaScript** and Brazilian and adds little things, but add more features in your projects.
 
 ## Español (es):
 
-Una biblioteca en **JavaScript**, Brasileira y que adciona muchas cosas pequenitas, mas que mejoram tu projetos.
+Una biblioteca en **JavaScript**, Brasileña y que adiciona muchas cosas pequeñitas, más que mejoran tus proyectos.
 
 # Docs
 

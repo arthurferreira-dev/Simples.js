@@ -21,6 +21,40 @@ var simplesMath = /*#__PURE__*/function () {
     value: function sub(x, y) {
       return x - y;
     }
+  }, {
+    key: "mult",
+    value: function mult(c, d) {
+      return c * d;
+    }
+  }, {
+    key: "div",
+    value: function div(a, z) {
+      if (z === 0) {
+        return Infinity;
+      } else {
+        return a / z;
+      }
+    }
+  }, {
+    key: "sqrt",
+    value: function sqrt(number) {
+      return Math.sqrt(number);
+    }
+  }, {
+    key: "log",
+    value: function log(number) {
+      return Math.log(number);
+    }
+  }, {
+    key: "log10",
+    value: function log10(number) {
+      return Math.log10(number);
+    }
+  }, {
+    key: "round",
+    value: function round(number) {
+      return Math.round(number);
+    }
   }]);
 }();
 module.exports = simplesMath;
