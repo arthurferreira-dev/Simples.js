@@ -17,41 +17,50 @@ let math = new simplesMath(); // puedes cambiar el nombre de la variable si lo d
 ```
 
 ## Suma:
-
+```javascript
 let x = math.sum(1, 2); // salida: 3
+```
 
 ## Resta:
-
+```javascript
 let y = math.sub(1, 1); // salida: 0
+```
 
 ## Multiplicación:
-
+```javascript
 let veces = math.mult(3, 3); // salida: 9
+```
 
 ## División:
-
+```javascript
 let div = math.div(3, 0); // salida: Infinity
+```
 
 ## Raíz Cuadrada:
-
+```javascript
 let raiz = math.sqrt(25); // salida: 5
+```
 
 ## Número al Cuadrado:
-
+```javascript
 let cuadrado = math.squared(5); // salida: 25
+```
 
 ## Logaritmo:
-
+```javascript
 let log = math.log(30); // salida: 3.4011973816621555
+```
 
 ## Logaritmo en base 10:
-
+```javascript
 let log10 = math.log10(30); // salida: 1.4771212547196624
+```
 
 ## Redondeo:
-
+```javascript
 let log = math.log(30);
 let round = math.round(log); // salida: 3
+```
 
 ## Exponenciación:
 ```javascript
