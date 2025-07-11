@@ -11,7 +11,7 @@
 ### Acesso a Classe ``simplesMath``
 
 ```javascript
-const {simplesMath, simplesUtils} = require("./dist/simples");
+import { simplesMath } from "./dist/simples.js";
 let math = new simplesMath(); // se quiser pode trocar o nome da variável
 ```
 
@@ -101,7 +101,7 @@ let abs = math.abs(+5); // output: 5
 ### Acesso as Classes da Lib:
 
 ```javascript
-const {simplesMath, simplesUtils} = require("./dist/simples");
+import { simplesUtils } from "./dist/simples.js";
 let utils = new simplesUtils(); // se quiser pode trocar o nome da variável
 ```
 

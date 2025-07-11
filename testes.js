@@ -1,4 +1,4 @@
-const {simplesMath, simplesUtils} = require('./dist/simples.js');
+import { simplesMath, simplesUtils, simplesElement } from "./dist/simples.js";
 
 let math = new simplesMath();
 let utils = new simplesUtils();

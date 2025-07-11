@@ -1,6 +1,6 @@
 // Simples.js
 
-class simplesMath {
+export class simplesMath {
     sum(a, b) {
         return a + b;
     }
@@ -75,7 +75,7 @@ class simplesMath {
     }
 }
 
-class simplesUtils {
+export class simplesUtils {
     isNumber(value) {
         return typeof value === 'number' && !isNaN(value);
     }
@@ -113,4 +113,18 @@ class simplesUtils {
     }
 }
 
-module.exports = { simplesMath, simplesUtils };
+export class simplesElement {
+    creatorElement(element) {
+        let item = document.createElement(element);
+        document.body.appendChild(item);
+        return item;
+    }
+
+    childElement(dad, element) {
+        dad.appendChild(element)
+    }
+
+    textElement(element, text) {
+        element.textContent = text
+    }
+}
