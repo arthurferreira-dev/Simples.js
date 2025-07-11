@@ -1,4 +1,6 @@
 // Simples.js
+import validator from "validator";
+const { isEmail, isMobilePhone } = validator;
 
 export class simplesMath {
     sum(a, b) {
@@ -110,6 +112,14 @@ export class simplesUtils {
 
     reverseString(string) {
         return string.split('').reverse().join('');
+    }
+
+    isEmail(email) {
+        return validator.isEmail(email);
+    }
+
+    isTelephone(number, country) {
+        return validator.isMobilePhone(number, country);
     }
 }
 

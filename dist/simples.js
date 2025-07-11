@@ -5,7 +5,9 @@ function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), 
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 // Simples.js
-
+import validator from "validator";
+var isEmail = validator.isEmail,
+  isMobilePhone = validator.isMobilePhone;
 export var simplesMath = /*#__PURE__*/function () {
   function simplesMath() {
     _classCallCheck(this, simplesMath);
@@ -150,6 +152,16 @@ export var simplesUtils = /*#__PURE__*/function () {
     value: function reverseString(string) {
       return string.split('').reverse().join('');
     }
+  }, {
+    key: "isEmail",
+    value: function isEmail(email) {
+      return validator.isEmail(email);
+    }
+  }, {
+    key: "isTelephone",
+    value: function isTelephone(number, country) {
+      return validator.isMobilePhone(number, country);
+    }
   }]);
 }();
 export var simplesElement = /*#__PURE__*/function () {
@@ -160,7 +172,7 @@ export var simplesElement = /*#__PURE__*/function () {
     key: "creatorElement",
     value: function creatorElement(element) {
       var item = document.createElement(element);
-      document.body.appendChild(element);
+      document.body.appendChild(item);
       return item;
     }
   }, {

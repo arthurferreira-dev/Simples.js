@@ -1,4 +1,4 @@
-import { simplesMath, simplesUtils, simplesElement } from "./dist/simples.js";
+import { simplesMath, simplesUtils } from "./dist/simples.js";
 
 let math = new simplesMath();
 let utils = new simplesUtils();
@@ -25,4 +25,5 @@ let data = utils.formatadorDate('2025-07-11')
 let date = utils.formatDate('2025-07-11')
 let reverse = utils.reverseString('esreveR')
 let squared = math.squared(5);
-console.log(squared)
+let num = utils.isEmail('+55 13 99797-8941');
+console.log(num)

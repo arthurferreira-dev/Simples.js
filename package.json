@@ -1,10 +1,11 @@
 {
   "name": "simples.js",
   "version": "1.0.0",
+  "type": "module",
   "description": "Uma biblioteca simples para adicionar funcionalidades",
   "main": "dist/simples.js",
   "scripts": {
-    "build": "babel src --out-dir dist --presets=@babel/preset-env",
+    "build": "babel src --out-dir dist",
     "minify": "uglifyjs dist/simples.js -o dist/simples.min.js"
   },
   "keywords": [
