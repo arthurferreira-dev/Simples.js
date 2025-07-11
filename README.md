@@ -1,7 +1,7 @@
 # Simples.js
 > Create by: @arthurferreira-dev
 
-[[!License](https://img.shields.io/badge/any_text-you_like-blue)](LICENSE)
+[![License](https://img.shields.io/badge/any_text-you_like-blue)](LICENSE)
 
 ## Português (pt):
 
