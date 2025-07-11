@@ -1,4 +1,5 @@
-const simplesMath = require("./dist/simples");
+const simplesMath = require('./dist/simples');
+
 let math = new simplesMath();
 
 let x = math.sum(1, 2)
@@ -9,4 +10,6 @@ let raiz = math.sqrt(25)
 let log = math.log(30)
 let round = math.round(log)
 let log10 = math.log10(30)
-console.log(log10)
+let pow = math.power(5, 10)
+
+console.log(pow);

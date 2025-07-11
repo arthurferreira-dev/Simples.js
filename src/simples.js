@@ -89,10 +89,10 @@ class simplesUtils {
     }
 
     formatDate(date) {
-        const date = new Date(date);
-        let day = String(date.getDate()).padStart(2, '0');
-        let month = String(date.getMonth() + 1).padStart(2, '0');
-        let year = date.getFullYear();
+        const d = new Date(date);
+        let day = String(d.getDate()).padStart(2, '0');
+        let month = String(d.getMonth() + 1).padStart(2, '0');
+        let year = d.getFullYear();
         return `${day}/${month}/${year}`;
     }
 

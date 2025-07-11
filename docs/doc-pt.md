@@ -2,7 +2,7 @@
 
 ## Classe ``simplesMath``
 
-### Acesso a Lib:
+### Acesso a Classe da Lib:
 
 ```javascript
 const simplesMath = require("./dist/simples");
@@ -51,4 +51,9 @@ let log10 = math.log10(30) // output: 1.4771212547196624
 ```javascript
 let log = math.log(30)
 let round = math.round(log) // output: 3
+```
+
+### Exponenciação
+```javascript
+
 ```

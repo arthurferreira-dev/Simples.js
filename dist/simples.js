@@ -97,4 +97,47 @@ var simplesMath = /*#__PURE__*/function () {
     }
   }]);
 }();
-module.exports = simplesMath;
+var simplesUtils = /*#__PURE__*/function () {
+  function simplesUtils() {
+    _classCallCheck(this, simplesUtils);
+  }
+  return _createClass(simplesUtils, [{
+    key: "isNumber",
+    value: function isNumber(value) {
+      return typeof value === 'number' && !isNaN(value);
+    }
+  }, {
+    key: "isString",
+    value: function isString(value) {
+      return typeof value === 'string';
+    }
+  }, {
+    key: "isArray",
+    value: function isArray(value) {
+      return Array.isArray(value);
+    }
+  }, {
+    key: "isObject",
+    value: function isObject(value) {
+      return _typeof(value) === 'object' && value !== null && !Array.isArray(value);
+    }
+  }, {
+    key: "formatDate",
+    value: function formatDate(date) {
+      var d = new Date(date);
+      var day = String(d.getDate()).padStart(2, '0');
+      var month = String(d.getMonth() + 1).padStart(2, '0');
+      var year = d.getFullYear();
+      return "".concat(day, "/").concat(month, "/").concat(year);
+    }
+  }, {
+    key: "reverseString",
+    value: function reverseString(str) {
+      return str.split('').reverse().join('');
+    }
+  }]);
+}();
+module.exports = {
+  simplesMath: simplesMath,
+  simplesUtils: simplesUtils
+};
