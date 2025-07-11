@@ -1,6 +1,8 @@
 # Simples.js
 > Create by: @arthurferreira-dev
 
+[[!License](https://img.shields.io/badge/any_text-you_like-blue)](LICENSE)
+
 ## Português (pt):
 
 Uma biblioteca feita em **JavaScript**, Brasileira e que adiciona coisas toscas mais que dão uma coisinha a mais no seus projetos.
