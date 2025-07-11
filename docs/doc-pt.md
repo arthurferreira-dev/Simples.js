@@ -4,7 +4,7 @@
 
 ### Acesso as Classes da Lib:
 
-### Acesso a Classe ``simples``
+### Acesso a Classe ``simplesMath``
 
 ```javascript
 const {simplesMath, simplesUtils} = require("./dist/simples");
@@ -60,12 +60,12 @@ let round = math.round(log) // output: 3
 let pow = math.power(5, 10) // output: 9765625
 ```
 
-### Randonização
+### Randomização
 ```javascript
 let rand = math.random(0, 100) // output: número aleatório (inteiro ou flutuante)
 ```
 
-### Randonização Inteira
+### Randomização Inteira
 ```javascript
 let randInt = math.randomInt(0, 100) // output: número aleatório (inteiro)
 ```
@@ -93,5 +93,5 @@ let abs = math.abs(+5) // output: 5
 
 ```javascript
 const {simplesMath, simplesUtils} = require("./dist/simples");
-let math = new simplesMath(); // se quiser pode trocar o nome da variável
+let math = new simplesUtils(); // se quiser pode trocar o nome da variável
 ```
