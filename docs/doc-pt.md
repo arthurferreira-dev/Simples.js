@@ -1,11 +1,13 @@
-# Documento do ``Simple.js``
+# Documento do ``Simples.js``
 
 ## Classe ``simplesMath``
 
-### Acesso a Classe da Lib:
+### Acesso as Classes da Lib:
+
+### Acesso a Classe ``simples``
 
 ```javascript
-const simplesMath = require("./dist/simples");
+const {simplesMath, simplesUtils} = require("./dist/simples");
 let math = new simplesMath(); // se quiser pode trocar o nome da variável
 ```
 
@@ -55,5 +57,41 @@ let round = math.round(log) // output: 3
 
 ### Exponenciação
 ```javascript
+let pow = math.power(5, 10) // output: 9765625
+```
 
+### Randonização
+```javascript
+let rand = math.random(0, 100) // output: número aleatório (inteiro ou flutuante)
+```
+
+### Randonização Inteira
+```javascript
+let randInt = math.randomInt(0, 100) // output: número aleatório (inteiro)
+```
+
+### Resto da Divisão
+```javascript
+let resto = math.mod(5, 2) // output: 1
+```
+
+### Fatorial
+```javascript
+let fat = math.factorial(5) // output: 120
+```
+
+### Valor Absoluto ou Módulo
+```javascript
+let abs = math.abs(-5) // output: 5
+let abs = math.abs(5) // output: 5
+let abs = math.abs(+5) // output: 5
+```
+
+## Classe ``simplesUtils``
+
+### Acesso as Classes da Lib:
+
+```javascript
+const {simplesMath, simplesUtils} = require("./dist/simples");
+let math = new simplesMath(); // se quiser pode trocar o nome da variável
 ```
