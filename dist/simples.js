@@ -122,18 +122,29 @@ var simplesUtils = /*#__PURE__*/function () {
       return _typeof(value) === 'object' && value !== null && !Array.isArray(value);
     }
   }, {
+    key: "formatadorDate",
+    value: function formatadorDate(date) {
+      // Português y Español
+      var d = new Date(date);
+      var dia = String(d.getDate() + 1).padStart(2, '0');
+      var mes = String(d.getMonth() + 1).padStart(2, '0');
+      var ano = d.getFullYear();
+      return "".concat(dia, "/").concat(mes, "/").concat(ano);
+    }
+  }, {
     key: "formatDate",
     value: function formatDate(date) {
+      // English
       var d = new Date(date);
-      var day = String(d.getDate()).padStart(2, '0');
+      var day = String(d.getDate() + 1).padStart(2, '0');
       var month = String(d.getMonth() + 1).padStart(2, '0');
       var year = d.getFullYear();
-      return "".concat(day, "/").concat(month, "/").concat(year);
+      return "".concat(month, "/").concat(day, "/").concat(year);
     }
   }, {
     key: "reverseString",
-    value: function reverseString(str) {
-      return str.split('').reverse().join('');
+    value: function reverseString(string) {
+      return string.split('').reverse().join('');
     }
   }]);
 }();

@@ -88,16 +88,24 @@ class simplesUtils {
         return typeof value === 'object' && value !== null && !Array.isArray(value);
     }
 
-    formatDate(date) {
+    formatadorDate(date) { // Português y Español
         const d = new Date(date);
-        let day = String(d.getDate()).padStart(2, '0');
-        let month = String(d.getMonth() + 1).padStart(2, '0');
-        let year = d.getFullYear();
-        return `${day}/${month}/${year}`;
+        let dia = String(d.getDate() + 1).padStart(2, '0');
+        let mes = String(d.getMonth() + 1).padStart(2, '0');
+        let ano = d.getFullYear();
+        return `${dia}/${mes}/${ano}`;
     }
 
-    reverseString(str) {
-        return str.split('').reverse().join('');
+    formatDate(date) { // English
+        const d = new Date(date);
+        let day = String(d.getDate() + 1).padStart(2, '0');
+        let month = String(d.getMonth() + 1).padStart(2, '0');
+        let year = d.getFullYear();
+        return `${month}/${day}/${year}`;
+    }
+
+    reverseString(string) {
+        return string.split('').reverse().join('');
     }
 }
 

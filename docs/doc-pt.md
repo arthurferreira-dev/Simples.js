@@ -93,5 +93,25 @@ let abs = math.abs(+5) // output: 5
 
 ```javascript
 const {simplesMath, simplesUtils} = require("./dist/simples");
-let math = new simplesUtils(); // se quiser pode trocar o nome da variável
+let utils = new simplesUtils(); // se quiser pode trocar o nome da variável
+```
+
+## Verificadores de classes primitivas
+
+### isNumber
+```javascript
+let number = utils.isNumber(5); // output: true
+let Notnumber = utils.isNumber('a') // output: false
+```
+
+### isString
+```javascript
+let string = utils.isString('Simples.js'); // output: true
+let Notstring = utils.isString(5); // output: false
+```
+
+### isArray
+```javascript
+let array = utils.isArray(['João', { nome: 'Maria' }]); // output: true
+let Notarray = utils.isArray('abc') // output: false
 ```

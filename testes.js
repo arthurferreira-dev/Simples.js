@@ -1,6 +1,7 @@
 const {simplesMath, simplesUtils} = require('./dist/simples.js');
 
 let math = new simplesMath();
+let utils = new simplesUtils();
 
 let x = math.sum(1, 2)
 let y = math.sub(1, 1)
@@ -16,5 +17,8 @@ let randInt = math.randomInt(0, 100)
 let resto = math.mod(5, 2)
 let fat = math.factorial(5)
 let abs = math.abs(+5)
-
-console.log(abs)
+let n = utils.isNumber(5);
+let str = utils.isString('Simples.js');
+let array = utils.isArray('a');
+let data = utils.formatadorDate('2025-07-11')
+console.log(data)
