@@ -1,6 +1,7 @@
 # Simples.js
 > Create by: @arthurferreira-dev
 
+[![NPM VERSION](https://img.shields.io/badge/npm-1.0.0-ff0000)](npmjs.com/)
 [![License](https://img.shields.io/badge/License-AGPL_3.0-purple)](LICENSE)
 
 ## Português (pt):
