@@ -1,0 +1,21 @@
+{
+  "name": "simples.js",
+  "version": "1.0.0",
+  "description": "Uma biblioteca simples para adicionar funcionalidades",
+  "main": "dist/simples.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --presets=@babel/preset-env",
+    "minify": "uglifyjs dist/simples.js -o dist/simples.min.js"
+  },
+  "keywords": [
+    "simples",
+    "biblioteca",
+    "javascript"
+  ],
+  "author": "Arthur Ferreira",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/preset-env": "^7.28.0"
+  }
+}
