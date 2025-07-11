@@ -153,6 +153,20 @@ export class simplesBrasil {
     real(dinheiro) {
         return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(dinheiro)
     }
+
+    AbreOolho() {
+        let simples = 'Simples.js:'
+        return console.log(simples, 'Abre o Olho, Animal!')
+    }
+
+    doc() {
+        let simples = 'Simples.js:'
+        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+    }
+
+    sinal() {
+        return alert('Simples JS: Tá ai seu Sinal!')
+    }
 }
 
 export class simplesUSA {
@@ -165,10 +179,20 @@ export class simplesUSA {
         let seconds = timer / time
         return setTimeout(seconds)
     }
+
+    doc() {
+        let simples = 'Simples.js:'
+        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+    }
 }
 
 export class simplesEspana {
     euro(dinero) {
         return new Intl.NumberFormat("es-ES", { style: "currency", currency: 'EUR' }).format(dinero)
+    }
+
+    doc() {
+        let simples = 'Simples.js:'
+        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
     }
 }

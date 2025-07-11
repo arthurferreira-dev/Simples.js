@@ -212,6 +212,23 @@ export var simplesBrasil = /*#__PURE__*/function () {
         currency: "BRL"
       }).format(dinheiro);
     }
+  }, {
+    key: "AbreOolho",
+    value: function AbreOolho() {
+      var simples = 'Simples.js:';
+      return console.log(simples, 'Abre o Olho, Animal!');
+    }
+  }, {
+    key: "doc",
+    value: function doc() {
+      var simples = 'Simples.js:';
+      return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+    }
+  }, {
+    key: "sinal",
+    value: function sinal() {
+      return alert('Simples JS: Tá ai seu Sinal!');
+    }
   }]);
 }();
 export var simplesUSA = /*#__PURE__*/function () {
@@ -234,6 +251,12 @@ export var simplesUSA = /*#__PURE__*/function () {
       var seconds = timer / time;
       return setTimeout(seconds);
     }
+  }, {
+    key: "doc",
+    value: function doc() {
+      var simples = 'Simples.js:';
+      return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+    }
   }]);
 }();
 export var simplesEspana = /*#__PURE__*/function () {
@@ -247,6 +270,12 @@ export var simplesEspana = /*#__PURE__*/function () {
         style: "currency",
         currency: 'EUR'
       }).format(dinero);
+    }
+  }, {
+    key: "doc",
+    value: function doc() {
+      var simples = 'Simples.js:';
+      return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
     }
   }]);
 }();
