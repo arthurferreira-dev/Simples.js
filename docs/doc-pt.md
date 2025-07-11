@@ -149,3 +149,5 @@ let date = utils.formatDate('2025-07-11') // ano-mes-dia = output: 07/11/2025
 ```javascript
 let reverse = utils.reverseString('esreveR') // output: Reverse
 ```
+
+## Classe 
