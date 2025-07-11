@@ -3,6 +3,7 @@
 ## Classes
 * [``simplesMath``](#classe-simplesmath)
 * [``simplesUtils``](#classe-simplesutils)
+* [``simplesElement``](#classe-simpleselement)
 
 ## Classe ``simplesMath``
 
@@ -150,4 +151,33 @@ let date = utils.formatDate('2025-07-11') // ano-mes-dia = output: 07/11/2025
 let reverse = utils.reverseString('esreveR') // output: Reverse
 ```
 
-## Classe 
+## Classe ``simplesElement``
+
+### Acesso a Classe ``simplesElement``
+
+```javascript
+import { simplesElement } from "./dist/simples.js";
+let element = new simplesElement(); // se quiser pode trocar o nome da variável
+```
+
+### HTML & CSS
+
+### Criar Elementos HTML
+```javascript
+element.creatorElement('p') // coloque a tag do elemento como string
+```
+
+### Elemento Pai
+```javascript
+let elemento = element.creatorElement('p');
+let main = document.querySelector('main');
+element.childElement(main, elemento);
+```
+
+### Text Content
+```javascript
+let elemento = element.creatorElement('p');
+let main = document.querySelector('main');
+element.childElement(main, elemento);
+element.textElement(elemento, 'GG')
+```
