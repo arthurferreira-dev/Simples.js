@@ -4,6 +4,9 @@
 * [``simplesMath``](#classe-simplesmath)
 * [``simplesUtils``](#classe-simplesutils)
 * [``simplesElement``](#classe-simpleselement)
+* [``simplesBrasil``](#classe-simplesbrasil)
+* [``simplesUSA``](#classe-simplesusa)
+* [``simplesEspana``](#classe-simplesespana)
 
 ## Classe ``simplesMath``
 
