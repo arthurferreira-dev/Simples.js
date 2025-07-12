@@ -3,7 +3,7 @@
 
 [![NPM VERSION](https://img.shields.io/badge/npm-1.0.0-ff0000)](npmjs.com/)
 [![License](https://img.shields.io/badge/License-AGPL_3.0-purple)](LICENSE)
-[![Language](https://img.shields.io/badge/language-JS-yellow)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Language](https://img.shields.io/badge/language-JS-yellow)](docs/javascript.md)
 
 ## Português (pt): <a href="https://www.flaticon.com/free-icon/square_16150285?term=brasil&page=1&position=4&origin=search&related_id=16150285"><img src="icons/brasil.png" height="30px"></a>
 
