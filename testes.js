@@ -43,4 +43,4 @@ const randIn = Math.floor(Math.random() * Alfa.length);
 
 let senha = Alfa[randIn];
 
-console.log(us)
+console.log(mm)

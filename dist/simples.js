@@ -242,11 +242,20 @@ export var simplesBrasil = /*#__PURE__*/function () {
   }, {
     key: "dolar",
     value: function dolar(dindin) {
-      return new Intl.NumberFormat("en-US", {
+      return new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "USD",
         currencyDisplay: "narrowSymbol"
       }).format(dindin).replace('$', 'US$');
+    }
+  }, {
+    key: "independencia",
+    value: function independencia(string) {
+      if (typeof string === 'string') {
+        return '07 de Setembro de 1822';
+      } else {
+        return 'Error: digite como uma STRING!';
+      }
     }
   }]);
 }();

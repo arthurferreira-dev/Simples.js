@@ -178,7 +178,15 @@ export class simplesBrasil {
     }
 
     dolar(dindin) {
-        return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol" }).format(dindin).replace('$', 'US$')
+        return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol" }).format(dindin).replace('$', 'US$')
+    }
+
+    independencia(string) {
+        if (typeof string === 'string') {
+            return '07 de Setembro de 1822'
+        } else {
+            return 'Error: digite como uma STRING!'
+        }
     }
 }
 

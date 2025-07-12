@@ -224,6 +224,11 @@ let tempo = brasil.cafe(10); // output: Pausa pra tomar um Café ☕. Já se pas
 let real = brasil.real(1500) // output: R$ 1.500,00
 ```
 
+### Dólar (US$)
+```javascript
+let usd = brasil.dolar(1500); // output: US$1.500,00
+```
+
 ### [EASTEREGG] Abre o Olho [EASTEREGG]
 ```javascript
 let gg = brasil.AbreOolho(); // output: Simples.js: Abre o Olho, Animal!
@@ -249,4 +254,13 @@ import { simplesUSA } from "./dist/simples.js";
 let eua = new simplesUSA(); // se quiser pode trocar o nome da variável
 ```
 
-### Dolár (US$ geralmente os EUA usa apenas $)
+### Dólar (US$ geralmente os EUA usa apenas $)
+
+```javascript
+let dollar = usa.dollar(1500); // output: $1,500.00
+```
+
+### Pause (Igual ao [Café](#café))
+```javascript
+let timer = eua.pause(10); // output: Pause Now!
+```
