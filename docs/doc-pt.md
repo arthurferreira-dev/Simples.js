@@ -151,6 +151,26 @@ let date = utils.formatDate('2025-07-11') // ano-mes-dia = output: 07/11/2025
 let reverse = utils.reverseString('esreveR') // output: Reverse
 ```
 
+## Verificadores usados da Lib [validator.js](https://github.com/validatorjs/validator.js)
+
+### Verificador de Email
+```javascript
+let email = utils.isEmail('exemplo@gmail.com'); // output: true
+```
+
+### Verificador de Número de Telefone
+```javascript
+let TelephoneNumber = utils.isTelephone('+55 13 99797-8941') // output: true
+let AnotherTelephoneNumber = utils.isTelephone(+55 13 99797-8941) // output: error | use entre STRING!
+```
+
+## Console Customizado
+
+### Console
+```javascript
+let console = utils.Console(1 + 1); // output: 2 = console.log(1 + 1) = 2
+```
+
 ## Classe ``simplesElement``
 
 ### Acesso a Classe ``simplesElement``
@@ -181,3 +201,52 @@ let main = document.querySelector('main');
 element.childElement(main, elemento);
 element.textElement(elemento, 'GG')
 ```
+
+## Classes de Países
+
+## Classe ``simplesBrasil``
+
+### Acesso a Classe ``simplesBrasil``
+
+```javascript
+import { simplesBrasil } from "./dist/simples.js";
+let brasil = new simplesBrasil(); // se quiser pode trocar o nome da variável
+```
+
+### Café
+
+```javascript
+let tempo = brasil.cafe(10); // output: Pausa pra tomar um Café ☕. Já se passou 10 segundos
+```
+
+### Real (R$)
+```javascript
+let real = brasil.real(1500) // output: R$ 1.500,00
+```
+
+### [EASTEREGG] Abre o Olho [EASTEREGG]
+```javascript
+let gg = brasil.AbreOolho(); // output: Simples.js: Abre o Olho, Animal!
+```
+
+### Documentação
+```javascript
+let doc = brasil.doc('x'); // output: Simples.js: https://github.com/arthurferreira-dev/Simples.js
+let doc2 = brasil.doc(1); // output: Error: digite como uma STRING!
+```
+
+### [EASTEREGG] Sinal [EASTEREGG]
+```javascript
+let sinal = brasil.sinal(); // output: Simples JS: Tá ai seu Sinal! | Se for no navegador mas se for no console vai dar erro
+```
+
+## Classe ``simplesUSA``
+
+### Acesso a Classe ``simplesUSA``
+
+```javascript
+import { simplesUSA } from "./dist/simples.js";
+let eua = new simplesUSA(); // se quiser pode trocar o nome da variável
+```
+
+### Dolár (US$ geralmente os EUA usa apenas $)

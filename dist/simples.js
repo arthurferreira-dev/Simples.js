@@ -167,6 +167,11 @@ export var simplesUtils = /*#__PURE__*/function () {
     value: function isTelephone(number, country) {
       return validator.isMobilePhone(number, country);
     }
+  }, {
+    key: "Console",
+    value: function Console(value) {
+      return console.log(value);
+    }
   }]);
 }();
 export var simplesElement = /*#__PURE__*/function () {
@@ -201,8 +206,9 @@ export var simplesBrasil = /*#__PURE__*/function () {
     value: function cafe(timer) {
       // pause
       var time = timer * 1000;
-      var seconds = timer / time;
-      return setTimeout(seconds);
+      return setTimeout(function () {
+        console.log('Pausa pra tomar um Café ☕.', "J\xE1 se passou ".concat(time / 1000, " segundos"));
+      }, time);
     }
   }, {
     key: "real",
@@ -220,14 +226,27 @@ export var simplesBrasil = /*#__PURE__*/function () {
     }
   }, {
     key: "doc",
-    value: function doc() {
-      var simples = 'Simples.js:';
-      return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+    value: function doc(_doc) {
+      if (typeof _doc === 'string') {
+        var simples = 'Simples.js:';
+        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+      } else {
+        return console.log('Error: digite como uma STRING!');
+      }
     }
   }, {
     key: "sinal",
     value: function sinal() {
       return alert('Simples JS: Tá ai seu Sinal!');
+    }
+  }, {
+    key: "dolar",
+    value: function dolar(dindin) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        currencyDisplay: "narrowSymbol"
+      }).format(dindin).replace('$', 'US$');
     }
   }]);
 }();
@@ -248,14 +267,19 @@ export var simplesUSA = /*#__PURE__*/function () {
     key: "pause",
     value: function pause(timer) {
       var time = timer * 1000;
-      var seconds = timer / time;
-      return setTimeout(seconds);
+      return setTimeout(function () {
+        console.log('Pause Now!');
+      }, time);
     }
   }, {
     key: "doc",
-    value: function doc() {
-      var simples = 'Simples.js:';
-      return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+    value: function doc(_doc2) {
+      if (typeof _doc2 === 'string') {
+        var simples = 'Simples.js:';
+        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+      } else {
+        return console.log('Error: please write like a STRING!');
+      }
     }
   }]);
 }();
@@ -273,9 +297,13 @@ export var simplesEspana = /*#__PURE__*/function () {
     }
   }, {
     key: "doc",
-    value: function doc() {
-      var simples = 'Simples.js:';
-      return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+    value: function doc(_doc3) {
+      if (typeof _doc3 === 'string') {
+        var simples = 'Simples.js:';
+        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js');
+      } else {
+        return console.log('Error: Porfavor escribe cómo una STRING!');
+      }
     }
   }]);
 }();

@@ -32,6 +32,10 @@ let num = utils.isEmail('exemplo@gmail.com');
 let dindin = brasil.real(1500)
 let mm = usa.dollar(1500)
 let dinero = espana.euro(1500)
+let nx = utils.isTelephone('+55 13 99797-8941')
+//let gg = brasil.doc(1);
+//let con = utils.Console(1 + 1);
+let us = brasil.dolar(1500);
 
 const Alfa = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
@@ -39,4 +43,4 @@ const randIn = Math.floor(Math.random() * Alfa.length);
 
 let senha = Alfa[randIn];
 
-console.log(senha)
+console.log(us)

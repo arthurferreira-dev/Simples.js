@@ -125,6 +125,10 @@ export class simplesUtils {
     isTelephone(number, country) {
         return validator.isMobilePhone(number, country);
     }
+
+    Console(value) {
+        return console.log(value)
+    }
 }
 
 export class simplesElement {
@@ -146,8 +150,9 @@ export class simplesElement {
 export class simplesBrasil {
     cafe(timer) { // pause
         let time = timer * 1000
-        let seconds = timer / time
-        return setTimeout(seconds)
+        return setTimeout(() => {
+            console.log('Pausa pra tomar um Café ☕.', `Já se passou ${time / 1000} segundos`)
+        }, time)
     }
 
     real(dinheiro) {
@@ -159,13 +164,21 @@ export class simplesBrasil {
         return console.log(simples, 'Abre o Olho, Animal!')
     }
 
-    doc() {
-        let simples = 'Simples.js:'
-        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+    doc(doc) {
+        if (typeof doc === 'string') {
+            let simples = 'Simples.js:'
+            return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+        } else {
+            return console.log('Error: digite como uma STRING!')
+        }
     }
 
     sinal() {
         return alert('Simples JS: Tá ai seu Sinal!')
+    }
+
+    dolar(dindin) {
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol" }).format(dindin).replace('$', 'US$')
     }
 }
 
@@ -176,13 +189,18 @@ export class simplesUSA {
 
     pause(timer) {
         let time = timer * 1000
-        let seconds = timer / time
-        return setTimeout(seconds)
+        return setTimeout(() => {
+            console.log('Pause Now!')
+        }, time)
     }
 
-    doc() {
-        let simples = 'Simples.js:'
-        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+    doc(doc) {
+        if (typeof doc === 'string') {
+            let simples = 'Simples.js:'
+            return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+        } else {
+            return console.log('Error: please write like a STRING!')
+        }
     }
 }
 
@@ -191,8 +209,12 @@ export class simplesEspana {
         return new Intl.NumberFormat("es-ES", { style: "currency", currency: 'EUR' }).format(dinero)
     }
 
-    doc() {
-        let simples = 'Simples.js:'
-        return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+    doc(doc) {
+        if (typeof doc === 'string') {
+            let simples = 'Simples.js:'
+            return console.log(simples, 'https://github.com/arthurferreira-dev/Simples.js')
+        } else {
+            return console.log('Error: Porfavor escribe cómo una STRING!')
+        }
     }
 }
