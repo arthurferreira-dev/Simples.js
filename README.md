@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/badge/License-AGPL_3.0-purple)](LICENSE)
 [![Language](https://img.shields.io/badge/language-JS-yellow)](docs/javascript.md)
 
+## NPM PACKAGE
+> [!ALERT]
+>
+> npm install @arthurferreira-dev/simples.js
+
 ## Português (pt): <a href="https://www.flaticon.com/free-icon/square_16150285?term=brasil&page=1&position=4&origin=search&related_id=16150285"><img src="icons/brasil.png" height="30px"></a>
 
 Uma biblioteca feita em **JavaScript**, Brasileira e que adiciona coisas toscas mais que dão uma coisinha a mais no seus projetos. <br>
