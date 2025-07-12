@@ -181,6 +181,10 @@ export class simplesBrasil {
         return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol" }).format(dindin).replace('$', 'US$')
     }
 
+    euro(dindin) {
+        return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "EUR" }).format(dindin)
+    }
+
     independencia(string) {
         if (typeof string === 'string') {
             return '07 de Setembro de 1822'
@@ -193,6 +197,14 @@ export class simplesBrasil {
 export class simplesUSA {
     dollar(money) {
         return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol" }).format(money)
+    }
+
+    real(money) {
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "BRL" }).format(money)
+    }
+
+    euro(money) {
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "EUR" }).format(money)
     }
 
     pause(timer) {
@@ -215,6 +227,14 @@ export class simplesUSA {
 export class simplesEspana {
     euro(dinero) {
         return new Intl.NumberFormat("es-ES", { style: "currency", currency: 'EUR' }).format(dinero)
+    }
+
+    dolar(dinero) {
+        return new Intl.NumberFormat("es-ES", { style: "currency", currency: "USD" }).format(dinero)
+    }
+
+    real(dinero) {
+        return new Intl.NumberFormat("es-ES", { style: "currency", currency: "BRL" }).format(dinero)
     }
 
     doc(doc) {

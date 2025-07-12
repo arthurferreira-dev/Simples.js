@@ -249,6 +249,14 @@ export var simplesBrasil = /*#__PURE__*/function () {
       }).format(dindin).replace('$', 'US$');
     }
   }, {
+    key: "euro",
+    value: function euro(dindin) {
+      return new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "EUR"
+      }).format(dindin);
+    }
+  }, {
     key: "independencia",
     value: function independencia(string) {
       if (typeof string === 'string') {
@@ -270,6 +278,22 @@ export var simplesUSA = /*#__PURE__*/function () {
         style: "currency",
         currency: "USD",
         currencyDisplay: "narrowSymbol"
+      }).format(money);
+    }
+  }, {
+    key: "real",
+    value: function real(money) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "BRL"
+      }).format(money);
+    }
+  }, {
+    key: "euro",
+    value: function euro(money) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "EUR"
       }).format(money);
     }
   }, {
@@ -302,6 +326,22 @@ export var simplesEspana = /*#__PURE__*/function () {
       return new Intl.NumberFormat("es-ES", {
         style: "currency",
         currency: 'EUR'
+      }).format(dinero);
+    }
+  }, {
+    key: "dolar",
+    value: function dolar(dinero) {
+      return new Intl.NumberFormat("es-ES", {
+        style: "currency",
+        currency: "USD"
+      }).format(dinero);
+    }
+  }, {
+    key: "real",
+    value: function real(dinero) {
+      return new Intl.NumberFormat("es-ES", {
+        style: "currency",
+        currency: "BRL"
       }).format(dinero);
     }
   }, {

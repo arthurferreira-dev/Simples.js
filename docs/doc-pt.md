@@ -219,6 +219,8 @@ let brasil = new simplesBrasil(); // se quiser pode trocar o nome da variável
 let tempo = brasil.cafe(10); // output: Pausa pra tomar um Café ☕. Já se passou 10 segundos
 ```
 
+## Moedas Internacionais
+
 ### Real (R$)
 ```javascript
 let real = brasil.real(1500) // output: R$ 1.500,00
@@ -227,6 +229,11 @@ let real = brasil.real(1500) // output: R$ 1.500,00
 ### Dólar (US$)
 ```javascript
 let usd = brasil.dolar(1500); // output: US$1.500,00
+```
+
+### Euro (€)
+```javascript
+let euro = brasil.euro(3000); // output: € 3.000,00
 ```
 
 ### [EASTEREGG] Abre o Olho [EASTEREGG]
@@ -245,6 +252,12 @@ let doc2 = brasil.doc(1); // output: Error: digite como uma STRING!
 let sinal = brasil.sinal(); // output: Simples JS: Tá ai seu Sinal! | Se for no navegador mas se for no console vai dar erro
 ```
 
+### Data da Independência do Brasil
+```javascript
+let inde = brasil.independencia('a'); // output: 07 de Setembro de 1822
+let inde2 = brasil.independencia(1); // output: Error: digite como uma STRING!
+```
+
 ## Classe ``simplesUSA``
 
 ### Acesso a Classe ``simplesUSA``
@@ -255,12 +268,57 @@ let eua = new simplesUSA(); // se quiser pode trocar o nome da variável
 ```
 
 ### Dólar (US$ geralmente os EUA usa apenas $)
-
 ```javascript
-let dollar = usa.dollar(1500); // output: $1,500.00
+let dollar = eua.dollar(1500); // output: $1,500.00
+```
+
+### Euro (€)
+```javascript
+let euro = usa.euro(3000); // output: €3,000.00
+```
+
+### Real (R$)
+```javascript
+let real = usa.real(3000); // output: R$3,000.00
 ```
 
 ### Pause (Igual ao [Café](#café))
 ```javascript
 let timer = eua.pause(10); // output: Pause Now!
+```
+
+### Doc (mesma coisa em [Documentação](#documentação))
+```javascript
+let doc = eua.doc('x'); // output: Simples.js: https://github.com/arthurferreira-dev/Simples.js
+let doc2 = eua.doc(1); // output: Error: please write like a STRING!
+```
+
+## Classe ``simplesEspana``
+
+### Acesso a Classe ``simplesEspana``
+
+```javascript
+import { simplesEspana } from "./dist/simples.js";
+let espana = new simplesEspana(); // se quiser pode trocar o nome da variável
+```
+
+### Euro (€)
+```javascript
+let dinero = espana.euro(1500); // output: 1500,00 €
+```
+
+### Dólar ($)
+```javascript
+let dolar = espana.dolar(3000); // output: 3000,00 US$
+```
+
+### Real (BRL)
+```javascript
+let real = espana.real(3000); // output: 3000,00 BRL
+```
+
+### Doc (mesma coisa que [Doc](#doc-mesma-coisa-em-documentação))
+```javascript
+let doc = eua.doc('x'); // output: Simples.js: https://github.com/arthurferreira-dev/Simples.js
+let doc2 = eua.doc(1); // output: Error: Porfavor escribe cómo una STRING!
 ```
