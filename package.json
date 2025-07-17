@@ -1,9 +1,18 @@
 {
   "name": "@arthurferreira-dev/simples.js",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "type": "module",
   "description": "Uma biblioteca simples para adicionar funcionalidades",
   "main": "dist/simples.js",
+  "module": "dist/simples.esm.js",
+  "browser": "dist/simples.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/simples.umd.js",
+      "require": "./dist/simples.esm.js"
+    }
+  },
+  "minify": "uglifyjs dist/simples.umd.js -o dist/simples.umd.min.js",
   "scripts": {
     "build": "babel src --out-dir dist",
     "minify": "uglifyjs dist/simples.js -o dist/simples.min.js"
